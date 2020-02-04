@@ -2,16 +2,20 @@
 #
 # Programme : LabyRunner
 # Auteur    : Arthur DECAEN
-# Date      : 03/02/2020
+# Date      : 04/02/2020
 # Version   : Beta 1.2
 #
 #--------------------------------------------
 
-import pygame
-from pygame.locals import *
-from mainarcade import *
 import time
 from random import *
+try :
+    import pygame
+    from pygame.locals import *
+except :
+    print("Pour pouvoir utiliser ce programme, merci d'installer Pygame sur votre machine.\npip install pygame")
+    time.sleep(5)
+    exit()
 try : # Ajustement automatique de la fenetre du programme
     import pyautogui
     screen_size = pyautogui.size()
@@ -24,6 +28,7 @@ except : # Valeur de la fenetre par défaut
     time.sleep(5)
     pygame.quit()
     quit()
+from mainarcade import *
 
 pygame.init()
 pygame.display.set_caption('LabyRunner Beta 1.2')
