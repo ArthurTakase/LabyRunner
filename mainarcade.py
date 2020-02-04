@@ -1,7 +1,8 @@
 # ---- Import ----
 import time
 from laby import *
-from random import *
+from random import randint
+import random
 try :
     import pygame
 except :

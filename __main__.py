@@ -11,6 +11,7 @@ import pygame
 from pygame.locals import *
 from mainarcade import *
 import time
+from random import *
 try : # Ajustement automatique de la fenetre du programme
     import pyautogui
     screen_size = pyautogui.size()
