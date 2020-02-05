@@ -32,6 +32,8 @@ from mainarcade import *
 
 pygame.init()
 pygame.display.set_caption('LabyRunner Beta 1.2')
+icon = pygame.image.load("images/icon.png").convert_alpha()
+pygame.display.set_icon(icon)
 screen = pygame.display.set_mode((max_width,max_height))
 
 #font = pygame.font.SysFont(None, 20)
