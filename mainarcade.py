@@ -5,11 +5,11 @@ from random import randint
 import random
 try :
     import pygame
+    from pygame.locals import *
 except :
     print("Pour pouvoir utiliser ce programme, merci d'installer Pygame sur votre machine.\npip install pygame")
     time.sleep(5)
     exit()
-from pygame.locals import *
 try : # Ajustement automatique de la fenetre du programme
     import pyautogui
     screen_size = pyautogui.size()

@@ -24,7 +24,7 @@ try : # Ajustement automatique de la fenetre du programme
     width = int(screen_size[1] / 1.13)
     height = width
 except : # Valeur de la fenetre par défaut
-    print("Pour une gestion dynamique de la taille le la fenetre du jeu, merci d'installer pyautogui sur votre machine.\npip install pyautogui")
+    print("Pour une gestion dynamique de la taille de la fenetre du jeu, merci d'installer pyautogui sur votre machine.\npip install pyautogui")
     time.sleep(5)
     pygame.quit()
     quit()
@@ -44,10 +44,10 @@ def button_click():
 
     back_image = pygame.image.load('images/background.png')
     back_image = pygame.transform.scale(back_image, (max_width, max_height))
+    screen.blit(back_image, (0,0,max_width,max_height))
 
     button1 = pygame.image.load('images/arcade_button_up.png')
     button2 = pygame.image.load('images/libre_button_up.png')
-    screen.blit(back_image, (0,0,max_width,max_height))
     screen.blit(button2, button_2)
     screen.blit(button1, button_1)
 
