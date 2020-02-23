@@ -2,8 +2,9 @@
 LabyRunner est un jeu typé Arcade dans lequel vous devez marquez le plus de points possible dans un temps imparti. Pour cela, vous devrez traversez des labyrinthes générés aléatoirement et ramasser le plus de bonus possible.
 
 ## Comment l'utiliser ?
-Pour lancer ce programme, vous pouvez utiliser **Python** et **Pygame**.
+Pour lancer ce programme, vous pouvez utiliser **Python**, **Pygame** et **Pyautogui**.
 > pip install pygame
+> pip install pyautogui
 
 Vous pouvez également lancer le jeu depuis le **.exe** fournis si vous êtes sous windows.
 
